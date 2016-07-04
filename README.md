@@ -17,6 +17,7 @@
   //请先把所有图片地址构成一个对象
   <script>
     var imgUrlData={'img1.jpg','img2.jpg','img3.jpg'}
+  //组件依赖sea.js
     seajs.use('preload',function(preLoader){
 	    var fn = new preLoader({
 		    data:data,
@@ -48,3 +49,5 @@
         Extend(this.options, options || {});
     }
 ```
+##Notes
+-不需要sea.js的直接把preLoader对象提取出来即可
