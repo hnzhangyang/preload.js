@@ -50,4 +50,4 @@
     }
 ```
 ##Notes
--不需要sea.js的直接把preLoader对象提取出来即可
+ - 不需要sea.js的直接把preLoader对象提取出来即可
