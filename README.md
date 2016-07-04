@@ -14,8 +14,8 @@
 ##Examples
 
 ```html
-  //请先把所有图片地址构成一个对象
   <script>
+  //请先把所有图片地址构成一个对象
     var imgUrlData={'img1.jpg','img2.jpg','img3.jpg'}
   //组件依赖sea.js
     seajs.use('preload',function(preLoader){
