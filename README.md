@@ -49,8 +49,8 @@
             data : [], 	     
             baseUrl:'./js/', 
             start:null, 
-	    callback:null,  
-	    complete:null 	 
+	    	callback:null,  
+	    	complete:null 	 
         }
         Extend(this.options, options || {});
     }
