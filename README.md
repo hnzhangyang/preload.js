@@ -36,15 +36,13 @@
   </script>
 ```
 ##主要参数
-```html
+```js
     /**
     *  @param {object} data     必填，用于存放资源地址的数组
     *  @param {string} baseUrl  基准URL，如果资源地址不是以HTTP,HTTPS开头 则在资源地址前面加上该基准URL,默认值 './js/'
     *  @param {function} start  预加载开始时调用的函数
     *  @param {function} callback   每次预加载成功调用的回调函数，该函数有两个参数，第一个参数index是该资源的索引，第二个参数total是资源总数
     *  @param {function} complete 资源全部预加载完成时调用的函数
-    *
-    *
     **/
 	setOption:function(options){
         this.options={
