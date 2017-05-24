@@ -34,7 +34,7 @@ preLoader.prototype={
 	setOption:function(options){
         this.options={
             data : [], 	     //用于存放资源地址的数组
-            baseUrl:'./js/', //基准URL，如果资源地址不是以HTTP,HTTPS开头 则在资源地址前面加上该基准URL
+            baseUrl:'',     //基准URL，如果资源地址不是以HTTP,HTTPS开头 则在资源地址前面加上该基准URL
             start:null,      //预加载开始时调用的函数
 			callback:null,   //每次预加载成功调用的回调函数，该函数有两个参数，第一个参数index是该资源的索引，第二个参数total是资源总数
 			complete:null 	 //资源全部预加载完成时调用的函数
@@ -70,33 +70,3 @@ preLoader.prototype={
 return preLoader;
 
 })
-    
-    
-    	
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  
-

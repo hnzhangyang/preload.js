@@ -12,11 +12,13 @@
 ## 目录
 - [usage](#usage)
 - [param](#param)
-  - [data](#data)
-  - [baseUrl](#baseUrl)
-  - [start](#start)
-  - [callback](#callback)
-  - [complete](#complete)
+  * [data](#data)
+  * [baseUrl](#baseUrl)
+  * [start](#start)
+  * [begin](#begin)
+  * [callback](#callback)
+  * [complete](#complete)
+- [Notes](#Notes)
 ## usage
 
 ```html
@@ -46,13 +48,15 @@
 ### data
 必填，用于存放资源地址的数组
 ### baseUrl
-基准URL，如果资源地址不是以HTTP,HTTPS开头 则在资源地址前面加上该基准URL,默认值 './js/'
+基准URL，如果资源地址不是以HTTP,HTTPS开头 则在资源地址前面加上该基准URL,默认值 ''
 ### start
-调用 start 启动预加载
+预加载启动时的钩子函数
+### begin
+调用 begin 启动预加载
 ### callback
 每次预加载成功调用的回调函数，该函数有两个参数，第一个参数index 是该资源的索引，第二个参数 total 是资源总数
 ### complete
-资源全部预加载完成时调用的函数
+资源全部预加载完成时的钩子函数
 
 ## Notes
  - 不需要sea.js的直接把preLoader对象提取出来即可

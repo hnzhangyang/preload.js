@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>preload</title>
+<script src="js/sea.js"></script>
+</head>
+<body>
+
+<input type="text" id="text" />
+<input type="button" value="点我开始" id="btn">
+
+<script>
+
+var data=[
+	'img/img1.jpg',
+	'img/img2.jpg',
+	'img/img3.jpg',
+	'img/img4.jpg',
+	'img/img5.jpg',
+	'img/img6.jpg',
+	'img/img7.jpg',
+	'img/img8.jpg',
+]
+
+seajs.use('preload',function(preLoader){
+	var fn = new preLoader({
+		data:data,
+		start:function(){
+			console.log('start');
+		},
+		callback:function(i,total){
+			console.log('i:'+i+'  total:'+total);
+			document.getElementById('text').value = 'i:'+i+'  total:'+total;
+		},
+		complete:function(){
+			console.log('complete');
+		}
+	})
+	
+	document.getElementById('btn').onclick=function(){
+		fn.begin();
+	};
+	
+
+});
+
+</script>
+
+
+</body>
+</html>
