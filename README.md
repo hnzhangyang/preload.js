@@ -40,7 +40,7 @@
 			    console.log('complete');
 		    }
 	    })
-		  fn.begin();
+      fn.begin();
     });
   </script>
 ```
